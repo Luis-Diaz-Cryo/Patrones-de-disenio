@@ -8,6 +8,11 @@ package SistemaDeGestiónDeRestaurantes;
         }
 
         @Override
+        public void verificarDispo() {
+            System.out.println("Verificando disponibilidad de ingredientes");
+        }
+
+        @Override
         public void prepararOrden() {
             System.out.println("Preparando la orden de comida");
         }
