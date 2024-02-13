@@ -1,6 +1,6 @@
 package SistemaDeGestiónDeRestaurantes;
 
-public class beverageOrder extends Orden {
+public class BeverageOrder extends Orden {
 
     @Override
     public void tomarOrden(){

@@ -2,16 +2,12 @@ package SistemaDeGestiónDeRestaurantes;
 
 public abstract class Orden {
 
-    public void tomarOrden() {
-    }
+    public abstract void tomarOrden() ;
 
-    public void verificarDispo(){
+    public abstract void verificarDispo();
 
-    }
-    public void prepararOrden(){
-    }
-    public void calcularPrecio(){
-    }
+    public abstract void prepararOrden();
+    public abstract void calcularPrecio();
 
     public final void procesarOrden(){
         tomarOrden();
