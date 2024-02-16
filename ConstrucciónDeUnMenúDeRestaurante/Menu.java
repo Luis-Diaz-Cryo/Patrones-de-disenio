@@ -7,13 +7,12 @@ public class Menu {
     private final Postre postre;
     private final Bebida bebida;
 
-    public Menu(Entrada entrada, PlatoFuerte platoFuerte, Postre postre, Bebida bebida, Entrada entrada1, PlatoFuerte platoFuerte1, Postre postre1, Bebida bebida1){
+    public Menu(Entrada entrada, PlatoFuerte platoFuerte, Postre postre, Bebida bebida){
 
-
-        this.entrada = entrada1;
-        this.platoFuerte = platoFuerte1;
-        this.postre = postre1;
-        this.bebida = bebida1;
+        this.entrada = entrada;
+        this.platoFuerte = platoFuerte;
+        this.postre = postre;
+        this.bebida = bebida;
     }
 
     public Entrada getEntrada(){
