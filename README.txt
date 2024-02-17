@@ -63,6 +63,5 @@ Las abstracciones refinadas (EnvíoTerrestre, EnvíoMarítimo, EnvíoAéreo) pro
 Implementaciones Concretasg (EnvíoExpress, EnvíoEstándar): Puede haber implementadores concretos adicionales que definen variantes específicas de servicios, como el envío estándar y envío express.
 Este patrón permite que los diferentes tipos de envíos (terrestres, marítimos, aéreos) se combinen con diferentes tipos de servicios (estándar, express) de manera independiente.
 
-Implementador Concreto (EnvíoExpress, EnvíoEstándar): Puede haber implementadores concretos adicionales que definen variantes específicas de servicios, como el envío estándar y envío express.
-Este patrón permite que los diferentes tipos de envíos (terrestres, marítimos, aéreos) se combinen con diferentes tipos de servicios (estándar, express) de manera independiente.
+
 
