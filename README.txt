@@ -4,45 +4,55 @@
 
 
 
-2) El patrón de diseño para el problema 2 es de comportamiento. El tipo de patrón de comportamiento para este problema específico es el patrón de comando. La razón detrás de esto es que este ejercicio solicita 3 requisitos específicos que son:
+2) El patrón de diseño para el problema 2 es de comportamiento y el tipo de patrón es "Comando"". La razón detrás de esto es que este ejercicio solicita 3 requisitos específicos que son:
 
--Desacopla al invocador de los objetos que realizan las acciones,
+-Desacoplar al invocador de los objetos que realizan las acciones
+-Permitir la extensión de nuevas operaciones sin modificar el código existente
+-Facilitar el registro de acciones para realizar operaciones de reversión.
 
--Permite la extensión de nuevas operaciones sin modificar el código existente,
-
- -Facilita el registro de acciones para realizar operaciones de reversión.
-
-Entonces, al revisar el patrón de diseño, encontramos que el patrón de comando se ajusta a estos criterios, ya que las ventajas del patrón de comando son:
+Entonces, al revisar el patrón de diseño, encontramos que Comando se ajusta a estos criterios, ya que las ventajas que proporciona son:
 
 -Principio de Responsabilidad Única. Puede desacoplar clases que invocan operaciones de clases que realizan estas operaciones.
-
--Principio Abierto/Cerrado. Puede introducir nuevos comandos en la aplicación sin romper el código de cliente existente.
-
+-Principio Open/Closed. Puede introducir nuevos comandos en la aplicación sin romper el código de cliente existente.
 -Puede implementar deshacer/rehacer.
 
-Y todo esto se ajusta a los criterios necesarios para que el patrón de diseño sea dominante.
+
+3) Utilizamos el patrón de diseño Creacional Builder para este caso ya que, a partir de los requerimientos del mismo, se especifica que es crucial
+permitir la construcción paso a paso de objetos complejos y desacoplar el proceso de construcción de la representación interna del objeto.
+
+Builder permite esto ya que en el caso de sistema de gestión para un restaurante, se puede utilizar un Builder de Menú que tenga métodos para agregar
+platos principales, entrantes, postres, bebidas, etc. Y cada uno de estos elementos puede ser un objeto complejo con diferentes propiedades y configuraciones.
+Builder te permite construir el menú paso a paso según las necesidades sin tener que modificar la lógica de construcción principal, además
+de permitir legibilidad y mantebinilidad del código al separar el proceso de construcción del objeto de su representaicón interna.
 
 
-3)
+4) Para este problema, elegimos el patrón Estructural Decorador ya que se solicitaban los siquientes requisitos:
 
-4) El patrón de diseño para esta pregunta es un patrón estructural llamado decorador. La razón detrás de esta elección es que el problema presentado tenía los siguientes requisitos.
+-Permitir agregar nuevas funcionalidades a objetos existentes de forma dinámica.
+-Proporcionar una alternativa flexible a la subclasificación para ampliar la funcionalidad.
+-Mejorrar la legibilidad y el mantenimiento del código al separar las preocupaciones.
 
--Permite agregar nuevas funcionalidades a objetos existentes de forma dinámica.
-
--Proporciona una alternativa flexible a la subclasificación para ampliar la funcionalidad.
-
--Mejora la legibilidad y el mantenimiento del código al separar las preocupaciones.
-
-Entonces, mientras analizamos los diferentes patrones de diseño, descubrimos que el decorador cumple con estos requisitos.
+Entonces, descubrimos que Decorador cumple con estos requisitos.
 
 -Puede ampliar el comportamiento de un objeto sin crear una nueva subclase.
-
 -Puede agregar o eliminar responsabilidades de un objeto en tiempo de ejecución.
-
 -Puedes combinar varios comportamientos envolviendo un objeto en varios decoradores.
+-Principio de Responsabilidad Única. Puede dividir una clase monolítica que implementa muchas variantes posibles de comportamiento en varias clases más pequeñas.
 
-Principio de Responsabilidad Única. Puede dividir una clase monolítica que implementa muchas variantes posibles de comportamiento en varias clases más pequeñas.
-
-Como se puede observar todos estos cumplen con los requisitos solicitados.
+De esta manera, pudimos dar solución a las solicitudes del problema.
 
 5)
+En este caso, se solicita desacoplar la abstracción de su implementación, permitiendo que ambas varíen de manera independiente.
+Por este motivo, seleccionamos el patrón Estructural Bridge ya que, además permite que tanto la abstracción como la implementación tengan jerarquías propias
+y que la abstracción delegue la implementación a su objeto implementador, separando así las dos jerarquías, ambos requerimientos del problema.
+
+En este caso:
+
+Abstracción (Envío) define la interfaz para la abstracción del envío.
+
+Implementación (Servicio) define la interfaz para la implementación del servicio.
+
+El Implementador Concreto (EnvíoTerrestre, EnvíoMarítimo, EnvíoAéreo) proporciona la implementación específica para cada tipo de envío.
+
+Implementador Concreto (EnvíoExpress, EnvíoEstándar): Puede haber implementadores concretos adicionales que definen variantes específicas de servicios, como el envío estándar y envío express.
+Este patrón permite que los diferentes tipos de envíos (terrestres, marítimos, aéreos) se combinen con diferentes tipos de servicios (estándar, express) de manera independiente.
