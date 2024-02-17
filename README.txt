@@ -1,8 +1,13 @@
-1)
+1) El patrón de diseño para esta pregunta es un patrón de comportamiento llamado método de Plantilla. La razón detrás de esta elección es que el problema presentado tenía los siguientes requisitos:
 
+- Encapsulación de la estructura del algoritmo común en una clase base.
+- Flexibilidad para que las subclases implementen pasos específicos según el tipo de pedido.
+- Evite la duplicación de código reutilizando la estructura común.
 
+Entonces, después de revisar el patrón de diseños, descubrimos que el método de plantilla se ajusta a los requisitos necesarios para este problema. El método de plantilla puede hacer lo siguiente
 
-
+-Puede extraer el código duplicado en una superclase para evitar la duplicación y encapsular la estructura del algoritmo común en una clase.
+-Anular sólo ciertas partes de un algoritmo grande, haciéndolas menos afectadas por los cambios que ocurren en otras partes del algoritmo. Eso permite flexibilidad para subclasificar para implementar solo pasos específicos
 
 2) El patrón de diseño para el problema 2 es de comportamiento y el tipo de patrón es "Comando"". La razón detrás de esto es que este ejercicio solicita 3 requisitos específicos que son:
 
@@ -54,5 +59,10 @@ Implementación (Servicio) define la interfaz para la implementación del servic
 
 Las abstracciones refinadas (EnvíoTerrestre, EnvíoMarítimo, EnvíoAéreo) proporciona la implementación específica para cada tipo de envío.
 
+<<<<<<< HEAD
 Implementaciones Concretasg (EnvíoExpress, EnvíoEstándar): Puede haber implementadores concretos adicionales que definen variantes específicas de servicios, como el envío estándar y envío express.
 Este patrón permite que los diferentes tipos de envíos (terrestres, marítimos, aéreos) se combinen con diferentes tipos de servicios (estándar, express) de manera independiente.
+=======
+Implementador Concreto (EnvíoExpress, EnvíoEstándar): Puede haber implementadores concretos adicionales que definen variantes específicas de servicios, como el envío estándar y envío express.
+Este patrón permite que los diferentes tipos de envíos (terrestres, marítimos, aéreos) se combinen con diferentes tipos de servicios (estándar, express) de manera independiente.
+>>>>>>> 3a6676c1c905ae7fa5fc1fa3be4534680f086806
