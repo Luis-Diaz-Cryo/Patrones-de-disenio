@@ -1,6 +1,6 @@
 package SistemaDeGestiónDeTareas;
 
-public class CompleteTask implements Command{
+public class CompleteTask implements Command {
     @Override
     public void execute() {
         System.out.println("task has been completed");

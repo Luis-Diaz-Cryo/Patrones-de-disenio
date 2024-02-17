@@ -1,6 +1,6 @@
 package DecoraciónDeHabitacionesEnUnHotel;
 
-public class GourmetChocolate extends Decorator{
+public class GourmetChocolate extends Decorator {
 
     @Override
     public String decorateRoom() {

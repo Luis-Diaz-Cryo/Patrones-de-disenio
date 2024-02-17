@@ -4,7 +4,7 @@ public abstract class Envio {
 
     protected Servicio servicio;
 
-    public Envio(Servicio servicio){
+    public Envio(Servicio servicio) {
         this.servicio = servicio;
     }
 

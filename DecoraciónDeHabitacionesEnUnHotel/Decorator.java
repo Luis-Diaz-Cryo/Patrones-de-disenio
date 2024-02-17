@@ -1,6 +1,6 @@
 package DecoraciónDeHabitacionesEnUnHotel;
 
-public abstract class Decorator implements RoomDecoration{
+public abstract class Decorator implements RoomDecoration {
 
 
     @Override

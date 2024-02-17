@@ -1,16 +1,16 @@
 package SistemaDeGestiónDeRestaurantes;
 
-public class OrderFood extends Orden{
+public class OrderFood extends Orden {
 
     @Override
     public void tomarOrden() {
         System.out.println("Tomando pedido de comida");
     }
 
-        @Override
-        public void verificarDispo() {
-            System.out.println("Verificando disponibilidad de ingredientes");
-        }
+    @Override
+    public void verificarDispo() {
+        System.out.println("Verificando disponibilidad de ingredientes");
+    }
 
     @Override
     public void prepararOrden() {

@@ -1,6 +1,6 @@
 package ImplementaciónDeUnSistemaDeEnvío;
 
-public class ServicioExpress implements Servicio{
+public class ServicioExpress implements Servicio {
 
 
     @Override

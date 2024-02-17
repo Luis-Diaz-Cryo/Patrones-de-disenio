@@ -1,8 +1,9 @@
 package SistemaDeGestiónDeTareas;
 
-public interface  Command {
+public interface Command {
 
     void execute();
+
     void undo();
 
 

@@ -3,7 +3,7 @@ package SistemaDeGestiónDeRestaurantes;
 public class DessertOrder extends Orden {
 
     @Override
-    public void tomarOrden(){
+    public void tomarOrden() {
         System.out.println("Tomando pedido de postres de la orden");
     }
 

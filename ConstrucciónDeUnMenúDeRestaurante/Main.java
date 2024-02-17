@@ -8,7 +8,7 @@ public class Main {
         Director.construirMenu(constructor);
 
         Menu menu = constructor.getResultado();
-        System.out.println("El menu es: "+ menu.getPlatoFuerte());
+        System.out.println("El menu es: " + menu.getPlatoFuerte());
 
     }
 

@@ -1,8 +1,8 @@
 package ImplementaciónDeUnSistemaDeEnvío;
 
-public class EnvioAereo extends Envio{
+public class EnvioAereo extends Envio {
 
-    public EnvioAereo(Servicio servicio){
+    public EnvioAereo(Servicio servicio) {
         super(servicio);
     }
 

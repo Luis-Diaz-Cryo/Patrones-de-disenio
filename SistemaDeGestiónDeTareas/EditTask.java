@@ -1,6 +1,6 @@
 package SistemaDeGestiónDeTareas;
 
-public class EditTask implements Command{
+public class EditTask implements Command {
 
     @Override
     public void execute() {

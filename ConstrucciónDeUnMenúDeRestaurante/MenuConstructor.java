@@ -1,6 +1,6 @@
 package ConstrucciónDeUnMenúDeRestaurante;
 
-public class MenuConstructor implements MenuInterface{
+public class MenuConstructor implements MenuInterface {
 
     private Entrada entrada;
     private PlatoFuerte platoFuerte;
@@ -8,7 +8,7 @@ public class MenuConstructor implements MenuInterface{
     private Bebida bebida;
 
     @Override
-    public void setEntrada(Entrada entrada){
+    public void setEntrada(Entrada entrada) {
         this.entrada = entrada;
     }
 
@@ -27,7 +27,7 @@ public class MenuConstructor implements MenuInterface{
         this.bebida = bebida;
     }
 
-    public Menu getResultado(){
+    public Menu getResultado() {
         return new Menu(entrada, platoFuerte, postre, bebida);
     }
 }

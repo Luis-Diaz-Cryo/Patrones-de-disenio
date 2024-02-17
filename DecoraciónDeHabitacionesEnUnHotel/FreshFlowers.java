@@ -1,6 +1,6 @@
 package DecoraciónDeHabitacionesEnUnHotel;
 
-public class FreshFlowers extends Decorator{
+public class FreshFlowers extends Decorator {
 
     @Override
     public String decorateRoom() {

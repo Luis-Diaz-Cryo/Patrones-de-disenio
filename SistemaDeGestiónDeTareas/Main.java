@@ -6,20 +6,19 @@ public class Main {
         TaskManager taskManager = new TaskManager();
 
 
-        Command CreateTask = new CreateTask();
-        taskManager.executeCommand(CreateTask);
+        Command createTask = new CreateTask();
+        taskManager.executeCommand(createTask);
 
-        Command EditTask =new EditTask();
-        taskManager.executeCommand(EditTask);
+        Command editTask = new EditTask();
+        taskManager.executeCommand(editTask);
 
-        Command CompleTask = new CompleteTask();
-        taskManager.executeCommand(CompleTask);
+        Command completeTask = new CompleteTask();
+        taskManager.executeCommand(completeTask);
 
-        Command DeleteTask = new CompleteTask();
-        taskManager.executeCommand(DeleteTask);
+        Command deleteTask = new CompleteTask();
+        taskManager.executeCommand(deleteTask);
 
         taskManager.undoLastCommand();
-
 
 
     }
