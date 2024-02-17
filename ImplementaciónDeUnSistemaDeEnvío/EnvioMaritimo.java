@@ -3,6 +3,7 @@ package ImplementaciónDeUnSistemaDeEnvío;
 public class EnvioMaritimo extends Envio{
 
     public EnvioMaritimo(Servicio servicio){
+
         super(servicio);
     }
 

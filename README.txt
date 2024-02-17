@@ -52,7 +52,7 @@ Abstracción (Envío) define la interfaz para la abstracción del envío.
 
 Implementación (Servicio) define la interfaz para la implementación del servicio.
 
-El Implementador Concreto (EnvíoTerrestre, EnvíoMarítimo, EnvíoAéreo) proporciona la implementación específica para cada tipo de envío.
+Las abstracciones refinadas (EnvíoTerrestre, EnvíoMarítimo, EnvíoAéreo) proporciona la implementación específica para cada tipo de envío.
 
-Implementador Concreto (EnvíoExpress, EnvíoEstándar): Puede haber implementadores concretos adicionales que definen variantes específicas de servicios, como el envío estándar y envío express.
+Implementaciones Concretasg (EnvíoExpress, EnvíoEstándar): Puede haber implementadores concretos adicionales que definen variantes específicas de servicios, como el envío estándar y envío express.
 Este patrón permite que los diferentes tipos de envíos (terrestres, marítimos, aéreos) se combinen con diferentes tipos de servicios (estándar, express) de manera independiente.
